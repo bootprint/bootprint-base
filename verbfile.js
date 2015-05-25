@@ -1,6 +1,7 @@
 var verb = require('verb');
 
-require("../bootprint-doc-generator")(verb, require("./"));
+require("../bootprint-verb-helpers")(verb, require("./"));
+
 
 
 
