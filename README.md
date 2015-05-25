@@ -56,17 +56,17 @@ The helper will set the following @-values according to the Handlebars documenta
 The partial can be overridden to render the main content. It is rendered inside a
 Bootstrap-container.
 
-### [@@name@@](handlebars/partials/base/footer.hbs#L13)
+### [base/footer](handlebars/partials/base/footer.hbs#L12)
 
 This partial is displayed after the other body contents within the html-body
 
-### [@@name@@](handlebars/partials/base/header.hbs#L13)
+### [base/header](handlebars/partials/base/header.hbs#L12)
 
 This partial is displayed before the other body contents within the html-body.
 
-### [@@name@@](handlebars/partials/base/title.hbs#L14)
+### [base/title](handlebars/partials/base/title.hbs#L13)
 
-This partial is rendered into the HTML-title in the <head>-tag of the page.
+This partial is rendered into thve HTML-title in the <head>-tag of the page.
 It can be overridden in order to display a custom title.
 
 ## Styles
