@@ -66,7 +66,7 @@ This partial is displayed before the other body contents within the html-body.
 
 ### [base/title](handlebars/partials/base/title.hbs#L13)
 
-This partial is rendered into thve HTML-title in the <head>-tag of the page.
+This partial is rendered into the HTML-title in the <head>-tag of the page.
 It can be overridden in order to display a custom title.
 
 ## Styles
