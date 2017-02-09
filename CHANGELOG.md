@@ -1,6 +1,15 @@
 # Release notes
 
 <a name="current-release"></a>
+# Version 1.1.0 (Thu, 09 Feb 2017 22:54:46 GMT)
+
+* [02a34b0](https://github.com/bootprint/bootprint-base/commit/02a34b0) Use jquery 2 because of bootstrap compatibility - Nils Knappmeier
+* [b380039](https://github.com/bootprint/bootprint-base/commit/b380039) Typo correction - Nils Knappmeier
+* [9f4afb8](https://github.com/bootprint/bootprint-base/commit/9f4afb8) Option to remove the javascript-bundle from the page - Nils Knappmeier
+* [14a0fd1](https://github.com/bootprint/bootprint-base/commit/14a0fd1) Extract contents of the <head>-tag into distinct partial - Nils Knappmeier
+
+
+
 # Version 1.0.0 (Fri, 23 Dec 2016 21:44:49 GMT)
 
 * [79e2e95](https://github.com/bootprint/bootprint-base/commit/79e2e95) Prepare for 1.0 release - Nils Knappmeier
