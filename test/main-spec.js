@@ -5,11 +5,12 @@
  * Released under the MIT license.
  */
 
-/* global describe */
-/* global it */
-/* global before */
+/* eslint-env mocha */
 
-var expect = require('chai').expect
+var chai = require('chai')
+chai.use(require('dirty-chai'))
+var expect = chai.expect
+
 var path = require('path')
 var qfs = require('m-io/fs')
 var fs = require('fs')
@@ -53,7 +54,7 @@ describe('The bootprint-base module', function () {
 
               var jqueryIndex = bundle.indexOf('jQuery requires a window with a document')
               var bootstrapIndex = bundle.indexOf("Bootstrap's JavaScript requires jQuery")
-              expect(jqueryIndex < bootstrapIndex, 'jQuery must be included before Bootstrap').to.be.true
+              expect(jqueryIndex < bootstrapIndex, 'jQuery must be included before Bootstrap').to.be.true()
             })
   })
 })
