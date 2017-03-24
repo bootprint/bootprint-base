@@ -47,6 +47,9 @@
   "peerDependencies": {
     "bootprint": "^1.0.0"
   },
+  "engines": {
+    "node": ">=6"
+  },
   "config": {
     "ghooks": {
       "pre-push": "thoughtful precommit && standard"
