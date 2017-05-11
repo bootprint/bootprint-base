@@ -18,6 +18,11 @@ describe('The Handlebars-helpers:', function () {
     it('should convert strings to upper-case', function () {
       expect(Handlebars.compile('{{toUpperCase id}}')({ id: ';/abc' })).to.equal(';/ABC')
     })
+
+    it('should ignore undefined values', function () {
+      expect(Handlebars.compile('{{toUpperCase id}}')({ id: undefined })).to.equal('')
+    })
+
   })
 
   describe('The "eachSorted"-helper', function () {
@@ -30,6 +35,17 @@ describe('The Handlebars-helpers:', function () {
                 '(first: false, last: false, index: 1, length: 3, key: keyB)=valueB\n' +
                 '(first: false, last: true, index: 2, length: 3, key: keyC)=valueC\n'
             )
+    })
+
+    it('should output an object in order of its keys', function () {
+      expect(Handlebars.compile('{{#eachSorted .}}' +
+        '(first: {{@first}}, last: {{@last}}, index: {{@index}}, length: {{@length}}, key: {{@key}})={{.}}\n' +
+        '{{/eachSorted}}')({ keyB: 'valueB', keyA: 'valueA', keyC: 'valueC' }))
+        .to.equal(
+        '(first: true, last: false, index: 0, length: 3, key: keyA)=valueA\n' +
+        '(first: false, last: false, index: 1, length: 3, key: keyB)=valueB\n' +
+        '(first: false, last: true, index: 2, length: 3, key: keyC)=valueC\n'
+      )
     })
   })
 
@@ -105,6 +121,20 @@ describe('The Handlebars-helpers:', function () {
                 '</code></pre>'
       expect(md('{{md line}}', code)).to.equal(expected)
     })
+
+    it('should auto-detect code-languages, if no fences are provided', function () {
+      var code = '```\n' +
+        '{ "abc": "abc" }\n' +
+        '```'
+      var expected = '<pre><code>{ "<span class="hljs-attribute">abc</span>": <span class="hljs-value"><span class="hljs-string">"abc"</span> </span>}\n' +
+        '</code></pre>'
+      expect(md('{{md line}}', code)).to.equal(expected)
+    })
+
+    it('should ignore undefined', function () {
+      expect(md('{{md line}}', undefined)).to.equal('')
+    })
+
   })
 
   describe('The "json"-helper', function () {

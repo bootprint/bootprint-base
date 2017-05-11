@@ -82,6 +82,7 @@ module.exports = {
       // http://stackoverflow.com/questions/8996963/how-to-perform-case-insensitive-sorting-in-javascript
       a = String(a).toLowerCase()
       b = String(b).toLowerCase()
+      /* istanbul ignore next: Should never happen, since all keys are different, but just to be sure... */
       if (a === b) return 0
       if (a > b) return 1
       return -1
