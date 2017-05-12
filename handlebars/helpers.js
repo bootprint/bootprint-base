@@ -160,16 +160,7 @@ module.exports = {
       return ''
     }
     var schemaString = require('json-stable-stringify')(value, {space: 4})
-
-    var $ = cheerio.load(marked('```json\r\n' + schemaString + '\n```'))
-    var definitions = $('span:not(:has(span)):contains("#/definitions/")')
-    definitions.each(function (index, item) {
-      var ref = $(item).html()
-      // TODO: This should be done in a template
-      $(item).html('<a href=' + ref.replace(/&quot;/g, '') + '>' + ref + '</a>')
-    })
-
-    return new Handlebars.SafeString($.html())
+    return new Handlebars.SafeString(marked('```json\r\n' + schemaString + '\n```'))
   },
   'ifcontains': function (array, object, options) {
     if (array && array.indexOf(object) >= 0) {
