@@ -1,8 +1,12 @@
 {{!
-    This partial is rendered into the `<head>`-tag of the page. It can be overridden
-    to replace its contents.
+    This partial is rendered into the `<head>`-tag of the page.
+    Additional tags can be placed in the partial `base/html-head-extra.hbs`.
+
+    This partial can also be overridden to replace its contents, but beware
+    that changes to this file may happen without incrementing the major version.
+    @access private
 }}
 <link rel="stylesheet" href="main.css">
 <meta charset="UTF-8">
 <title>{{>base/title}}</title>
-                                                     
+{{>base/html-head-extra}}
