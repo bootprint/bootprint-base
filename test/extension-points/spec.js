@@ -14,11 +14,11 @@ var expect = chai.expect
 var path = require('path')
 var tester = require('bootprint-unit-testing')
 
-describe.only('Extension points: bootprint-base', function () {
+describe('Extension points: bootprint-base', function () {
   this.timeout(10000)
 
   /**
-   * Load bootprint-base and merge custom partials for this tests
+   * Load bootprint-base and merge custom partials and less definitions for this tests
    * @param customize
    */
   function module (customize) {
@@ -27,6 +27,9 @@ describe.only('Extension points: bootprint-base', function () {
       .merge({
         handlebars: {
           partials: path.join(__dirname, 'partials')
+        },
+        less: {
+          main: path.join(__dirname, 'less', 'main.less')
         }
       })
   }
@@ -65,5 +68,9 @@ describe.only('Extension points: bootprint-base', function () {
   it('should include the partial "base/title" inside the title tag', function () {
     expect(bptest.$('head > title').html().trim())
       .to.equal('title extension-points-spec')
+  })
+
+  it('should add less-definitions to the main.css file', function () {
+    expect(bptest.read('main.css')).to.contain('bootprint-base.extensionpoints')
   })
 })

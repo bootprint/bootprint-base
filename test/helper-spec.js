@@ -170,6 +170,5 @@ describe('The Handlebars-helpers:', function () {
     it('should execute the inverse block if the array does not contain a value', function () {
       expect(template({array: [1, 2, 3], value: 4})).to.equal('no')
     })
-
   })
 })

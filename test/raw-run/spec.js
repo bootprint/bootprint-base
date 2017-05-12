@@ -27,4 +27,8 @@ describe('If run without any overrides, ', function () {
   it('should generate a container div', function () {
     expect(bptest.$('body > div.container').length).to.equal(1)
   })
+
+  it('should include Bootstrap to the main.css file', function () {
+    expect(bptest.read('main.css')).to.contain('getbootstrap')
+  })
 })
