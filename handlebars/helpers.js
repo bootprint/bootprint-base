@@ -1,5 +1,7 @@
 var Handlebars = require('handlebars')
+delete require.cache[require.resolve('marked')]
 var marked = require('marked')
+delete require.cache[require.resolve('marked')]
 var cheerio = require('cheerio')
 var highlight = require('highlight.js')
 

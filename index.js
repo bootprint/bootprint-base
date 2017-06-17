@@ -2,8 +2,6 @@ var path = require('path')
 
 // Export function to create new config (builder is passed in from outside)
 module.exports = function (builder) {
-  var bootstrapLess = require.resolve('bootstrap/less/bootstrap.less')
-
   return builder.merge({
     handlebars: {
       templates: path.resolve(__dirname, 'handlebars', 'templates'),
@@ -21,12 +19,11 @@ module.exports = function (builder) {
     },
     less: {
       main: [
-        bootstrapLess,
         require.resolve('highlight.js/styles/default.css'),
         require.resolve('./less/main.less')
       ],
       paths: [
-        path.dirname(bootstrapLess)
+        path.dirname(require.resolve('bootstrap/less/bootstrap.less'))
       ]
     }
   })

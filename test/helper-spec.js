@@ -31,10 +31,10 @@ describe('The Handlebars-helpers:', function () {
         '(first: {{@first}}, last: {{@last}}, index: {{@index}}, length: {{@length}}, key: {{@key}})={{.}}\n' +
         '{{/eachSorted}}')({keyB: 'valueB', keyA: 'valueA', keyC: 'valueC'}))
         .to.equal(
-        '(first: true, last: false, index: 0, length: 3, key: keyA)=valueA\n' +
+          '(first: true, last: false, index: 0, length: 3, key: keyA)=valueA\n' +
         '(first: false, last: false, index: 1, length: 3, key: keyB)=valueB\n' +
         '(first: false, last: true, index: 2, length: 3, key: keyC)=valueC\n'
-      )
+        )
     })
 
     it('should output an object in order of its keys', function () {
@@ -42,10 +42,10 @@ describe('The Handlebars-helpers:', function () {
         '(first: {{@first}}, last: {{@last}}, index: {{@index}}, length: {{@length}}, key: {{@key}})={{.}}\n' +
         '{{/eachSorted}}')({keyB: 'valueB', keyA: 'valueA', keyC: 'valueC'}))
         .to.equal(
-        '(first: true, last: false, index: 0, length: 3, key: keyA)=valueA\n' +
+          '(first: true, last: false, index: 0, length: 3, key: keyA)=valueA\n' +
         '(first: false, last: false, index: 1, length: 3, key: keyB)=valueB\n' +
         '(first: false, last: true, index: 2, length: 3, key: keyC)=valueC\n'
-      )
+        )
     })
 
     it('should ignore undefined inputs', function () {
@@ -53,8 +53,8 @@ describe('The Handlebars-helpers:', function () {
         '(first: {{@first}}, last: {{@last}}, index: {{@index}}, length: {{@length}}, key: {{@key}})={{.}}\n' +
         '{{/eachSorted}}')(undefined))
         .to.equal(
-        ''
-      )
+          ''
+        )
     })
   })
 
@@ -126,8 +126,8 @@ describe('The Handlebars-helpers:', function () {
       var code = '```json\n' +
         '{ "abc": "abc" }\n' +
         '```'
-      var expected = '<pre><code class="lang-json">{ "<span class="hljs-attribute">abc</span>": <span class="hljs-value"><span class="hljs-string">"abc"</span> </span>}\n' +
-        '</code></pre>'
+      var expected = `<pre><code class="lang-json">{ <span class="hljs-attr">"abc"</span>: <span class="hljs-string">"abc"</span> }
+</code></pre>`
       expect(md('{{md line}}', code)).to.equal(expected)
     })
 
@@ -135,8 +135,8 @@ describe('The Handlebars-helpers:', function () {
       var code = '```\n' +
         '{ "abc": "abc" }\n' +
         '```'
-      var expected = '<pre><code>{ "<span class="hljs-attribute">abc</span>": <span class="hljs-value"><span class="hljs-string">"abc"</span> </span>}\n' +
-        '</code></pre>'
+      var expected = `<pre><code>{ <span class="hljs-attr">"abc"</span>: <span class="hljs-string">"abc"</span> }
+</code></pre>`
       expect(md('{{md line}}', code)).to.equal(expected)
     })
 
