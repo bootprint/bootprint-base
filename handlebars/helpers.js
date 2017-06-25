@@ -37,7 +37,7 @@ marked.setOptions({
 })
 
 /**
- * Default Handlebars-helpers for Thought
+ * Default Handlebars-helpers for `bootprint-base`
  * @name helpers
  */
 module.exports = {
