@@ -2,7 +2,7 @@
 
 [![NPM version](https://badge.fury.io/js/bootprint-base.svg)](http://badge.fury.io/js/bootprint-base)
 [![Travis Build Status](https://travis-ci.org/bootprint/bootprint-base.svg?branch=master)](https://travis-ci.org/bootprint/bootprint-base)
-
+[![Coverage Status](https://img.shields.io/codecov/bootprint/bootprint-base.svg)](https://codecov.io/github/bootprint/bootprint-base)
 [![Greenkeeper badge](https://badges.greenkeeper.io/bootprint/bootprint-base.svg)](https://greenkeeper.io/)
 
 > The base configuration used by other Bootprint modules

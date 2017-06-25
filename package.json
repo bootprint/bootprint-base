@@ -45,7 +45,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.4.2",
-    "thought": "^1.4.0",
+    "thought": "^1.5.0",
     "thought-plugin-bootprint": "^1.0.0",
     "thoughtful-release": "^0.3.1",
     "trace-and-clarify-if-possible": "^1.0.0"
