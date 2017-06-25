@@ -18,7 +18,7 @@ This page describes the API of this Bootprint-module
     <tr>
         <th>Source file</th>
         <td>
-<a href="https://github.com/bootprint/bootprint-base/blob/v1.0.0/handlebars/templates/index.html.hbs">bootprint-base @ 1.0.0 / handlebars/templates/index.html.hbs</a>        </td>
+<a href="https://github.com/bootprint/bootprint-base/blob/v2.0.0-rc.1/handlebars/templates/index.html.hbs">bootprint-base @ 2.0.0-rc.1 / handlebars/templates/index.html.hbs</a>        </td>
     </tr>
         <tr>
             <th>Structure</th>
@@ -71,7 +71,7 @@ Default template for rendering the HTML-page.
     <tr>
         <th>Source file</th>
         <td>
-<a href="https://github.com/bootprint/bootprint-base/blob/v1.0.0/handlebars/partials/base/body.hbs">bootprint-base @ 1.0.0 / handlebars/partials/base/body.hbs</a>        </td>
+<a href="https://github.com/bootprint/bootprint-base/blob/v2.0.0-rc.1/handlebars/partials/base/body.hbs">bootprint-base @ 2.0.0-rc.1 / handlebars/partials/base/body.hbs</a>        </td>
     </tr>
         <tr>
             <th>Used by</th>
@@ -98,7 +98,7 @@ This partial is displayed at the inside a `.container`-element in the HTML-body.
     <tr>
         <th>Source file</th>
         <td>
-<a href="https://github.com/bootprint/bootprint-base/blob/v1.0.0/handlebars/partials/base/footer.hbs">bootprint-base @ 1.0.0 / handlebars/partials/base/footer.hbs</a>        </td>
+<a href="https://github.com/bootprint/bootprint-base/blob/v2.0.0-rc.1/handlebars/partials/base/footer.hbs">bootprint-base @ 2.0.0-rc.1 / handlebars/partials/base/footer.hbs</a>        </td>
     </tr>
         <tr>
             <th>Used by</th>
@@ -124,7 +124,7 @@ This partial is displayed at the bottom of the HTML-body.
     <tr>
         <th>Source file</th>
         <td>
-<a href="https://github.com/bootprint/bootprint-base/blob/v1.0.0/handlebars/partials/base/header.hbs">bootprint-base @ 1.0.0 / handlebars/partials/base/header.hbs</a>        </td>
+<a href="https://github.com/bootprint/bootprint-base/blob/v2.0.0-rc.1/handlebars/partials/base/header.hbs">bootprint-base @ 2.0.0-rc.1 / handlebars/partials/base/header.hbs</a>        </td>
     </tr>
         <tr>
             <th>Used by</th>
@@ -150,7 +150,7 @@ This partial is displayed at the top of the HTML-body.
     <tr>
         <th>Source file</th>
         <td>
-<a href="https://github.com/bootprint/bootprint-base/blob/v1.0.0/handlebars/partials/base/html-head-extra.hbs">bootprint-base @ 1.0.0 / handlebars/partials/base/html-head-extra.hbs</a>        </td>
+<a href="https://github.com/bootprint/bootprint-base/blob/v2.0.0-rc.1/handlebars/partials/base/html-head-extra.hbs">bootprint-base @ 2.0.0-rc.1 / handlebars/partials/base/html-head-extra.hbs</a>        </td>
     </tr>
         <tr>
             <th>Used by</th>
@@ -175,7 +175,7 @@ This partial is added inside the <head>-tag, after the
     <tr>
         <th>Source file</th>
         <td>
-<a href="https://github.com/bootprint/bootprint-base/blob/v1.0.0/handlebars/partials/base/html-head.hbs">bootprint-base @ 1.0.0 / handlebars/partials/base/html-head.hbs</a>        </td>
+<a href="https://github.com/bootprint/bootprint-base/blob/v2.0.0-rc.1/handlebars/partials/base/html-head.hbs">bootprint-base @ 2.0.0-rc.1 / handlebars/partials/base/html-head.hbs</a>        </td>
     </tr>
         <tr>
             <th>Uses partials</th>
@@ -208,7 +208,7 @@ This partial is rendered into the `<head>`-tag of the page.
     <tr>
         <th>Source file</th>
         <td>
-<a href="https://github.com/bootprint/bootprint-base/blob/v1.0.0/handlebars/partials/base/javascript-libs.hbs">bootprint-base @ 1.0.0 / handlebars/partials/base/javascript-libs.hbs</a>        </td>
+<a href="https://github.com/bootprint/bootprint-base/blob/v2.0.0-rc.1/handlebars/partials/base/javascript-libs.hbs">bootprint-base @ 2.0.0-rc.1 / handlebars/partials/base/javascript-libs.hbs</a>        </td>
     </tr>
         <tr>
             <th>Used by</th>
@@ -230,7 +230,7 @@ This partial is rendered below the `footer`-partial of the page. You can include
     <tr>
         <th>Source file</th>
         <td>
-<a href="https://github.com/bootprint/bootprint-base/blob/v1.0.0/handlebars/partials/base/title.hbs">bootprint-base @ 1.0.0 / handlebars/partials/base/title.hbs</a>        </td>
+<a href="https://github.com/bootprint/bootprint-base/blob/v2.0.0-rc.1/handlebars/partials/base/title.hbs">bootprint-base @ 2.0.0-rc.1 / handlebars/partials/base/title.hbs</a>        </td>
     </tr>
         <tr>
             <th>Used by</th>
@@ -249,7 +249,7 @@ This partial is rendered into the HTML-title in the `<head>`-tag of the page.
 
 # Helpers 
 
-(from [bootprint-base@1.0.0/handlebars/helpers.js](https://github.com/bootprint/bootprint-base/blob/v1.0.0/handlebars/helpers.js))
+(from [bootprint-base@2.0.0-rc.1/handlebars/helpers.js](https://github.com/bootprint/bootprint-base/blob/v2.0.0-rc.1/handlebars/helpers.js))
 
 ## Members
 
@@ -323,7 +323,7 @@ The helper will set the following @-values according to the Handlebars documenta
 ## Main LessCSS-files
 
 * [highlight.js@9.12.0/styles/default.css](https://github.com/isagalaev/highlight.js/blob/v9.12.0/styles/default.css)  
-* [bootprint-base@1.0.0/less/main.less](https://github.com/bootprint/bootprint-base/blob/v1.0.0/less/main.less)  
+* [bootprint-base@2.0.0-rc.1/less/main.less](https://github.com/bootprint/bootprint-base/blob/v2.0.0-rc.1/less/main.less)  
     
 ## LessCSS include paths
 

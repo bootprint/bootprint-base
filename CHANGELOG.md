@@ -1,6 +1,25 @@
 # Release notes
 
 <a name="current-release"></a>
+# Version 2.0.0-rc.1 (Sun, 25 Jun 2017 08:02:39 GMT)
+
+* [a1b36bb](https://github.com/bootprint/bootprint-base/commit/a1b36bb) Use "thought-plugin-bootprint" for docs and update other deps - Nils Knappmeier
+* [dd6bffd](https://github.com/bootprint/bootprint-base/commit/dd6bffd) Add test for including less files - Nils Knappmeier
+* [25cd4ec](https://github.com/bootprint/bootprint-base/commit/25cd4ec) BREAKING: Partial "base/html-head.hbs" is not public API anymore - Nils Knappmeier
+* [f00e943](https://github.com/bootprint/bootprint-base/commit/f00e943) BREAKING: Stop creating links to "definition"-elements - Nils Knappmeier
+* [143364f](https://github.com/bootprint/bootprint-base/commit/143364f) Add more helper tests for edge-cases... - Nils Knappmeier
+* [8d86608](https://github.com/bootprint/bootprint-base/commit/8d86608) BREAKING: Remove bootstrap.js and jquery.js - Nils Knappmeier
+* [087951d](https://github.com/bootprint/bootprint-base/commit/087951d) BREAKING: Major chore changes, drop support for node before 6.0 - Nils Knappmeier
+* [5a88c4c](https://github.com/bootprint/bootprint-base/commit/5a88c4c) Remove lodash dependency - Nils Knappmeier
+* [8c274ee](https://github.com/bootprint/bootprint-base/commit/8c274ee) Update dependencies, use Standard as dev-dependency, fix code-style - Nils Knappmeier
+* [d7cf28b](https://github.com/bootprint/bootprint-base/commit/d7cf28b) Update dependencies to enable Greenkeeper 🌴 (#5) - greenkeeper[bot]
+* [04837ad](https://github.com/bootprint/bootprint-base/commit/04837ad) Use jquery 2 because of bootstrap compatibility - Nils Knappmeier
+* [eb06bdc](https://github.com/bootprint/bootprint-base/commit/eb06bdc) Typo correction - Nils Knappmeier
+* [cd0f12b](https://github.com/bootprint/bootprint-base/commit/cd0f12b) Option to remove the javascript-bundle from the page - Nils Knappmeier
+* [14a0fd1](https://github.com/bootprint/bootprint-base/commit/14a0fd1) Extract contents of the <head>-tag into distinct partial - Nils Knappmeier
+
+
+
 # Version 1.0.0 (Fri, 23 Dec 2016 21:44:49 GMT)
 
 * [79e2e95](https://github.com/bootprint/bootprint-base/commit/79e2e95) Prepare for 1.0 release - Nils Knappmeier
