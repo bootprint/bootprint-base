@@ -1,6 +1,11 @@
 # Release notes
 
 <a name="current-release"></a>
+# Version 2.0.0-rc.2 (Sun, 25 Jun 2017 21:53:51 GMT)
+
+* [5d51c70](https://github.com/bootprint/bootprint-base/commit/5d51c70) Chore/Docs: Restructure helpers and add api-docs - Nils Knappmeier
+* [1cf8fa0](https://github.com/bootprint/bootprint-base/commit/1cf8fa0) Bump "thought"-version in order to add "codecov"-badge to README - Nils Knappmeier
+
 # Version 2.0.0-rc.1 (Sun, 25 Jun 2017 08:02:39 GMT)
 
 * [a1b36bb](https://github.com/bootprint/bootprint-base/commit/a1b36bb) Use "thought-plugin-bootprint" for docs and update other deps - Nils Knappmeier
