@@ -251,46 +251,39 @@ This partial is rendered into the HTML-title in the `<head>`-tag of the page.
 
 (from [bootprint-base@2.0.0-rc.1/handlebars/helpers.js](https://github.com/bootprint/bootprint-base/blob/v2.0.0-rc.1/handlebars/helpers.js))
 
-## Members
+<a name="helpers"></a>
 
-<dl>
-<dt><a href="#toUpperCase">toUpperCase</a> ⇒ <code>string</code></dt>
-<dd><p>Converts a string to uppercase</p>
-</dd>
-<dt><a href="#eachSorted">eachSorted</a> ⇒ <code>string</code></dt>
-<dd><p>This block-helper can be used to iterate objects sorted by key. It behaves like the built-in
-<code>{{#each ...}}</code>-helper except that it can only be used for objects and the output is in a
-deterministic order (i.e. sorted).</p>
-<p>Example template:</p>
-<pre><code class="lang-handlebars">{{#eachSorted obj}}
-   {{@index}} of {{@length}}: {{@key}}={{.}}
-{{/eachSorted}}
-</code></pre>
-<p>With the data <code>{ b: &#39;another one&#39;, a: &#39;first&#39; }</code>, ignoring newlines and indents, this will output</p>
-<pre><code class="lang-text">1 of 2: a=first
-2 of 2: b=another one
-</code></pre>
-<p>The helper will set the following @-values according to the Handlebars documentation:
-<code>@first</code>, <code>@index</code>, <code>@key</code>, <code>@last</code>, <code>@length</code></p>
-</dd>
-</dl>
-
-<a name="toUpperCase"></a>
-
-## toUpperCase ⇒ <code>string</code>
-Converts a string to uppercase
+## helpers
+Default Handlebars-helpers for Thought
 
 **Kind**: global variable  
+
+* [helpers](#helpers)
+    * [.toUpperCase(value)](#helpers.toUpperCase) ⇒ <code>string</code>
+    * [.eachSorted()](#helpers.eachSorted) ⇒ <code>string</code>
+    * [.equal(value1, value2)](#helpers.equal) ⇒ <code>boolean</code>
+    * [.md(&#x60;value&#x60;)](#helpers.md) ⇒ <code>Handlebars.SafeString</code>
+    * [.ifeq(&#x60;v1&#x60;, &#x60;v2&#x60;)](#helpers.ifeq)
+    * [.json(value)](#helpers.json) ⇒ <code>string</code>
+    * [.ifcontains(array, object, options)](#helpers.ifcontains) ⇒ <code>string</code>
+    * [.htmlId(value)](#helpers.htmlId) ⇒ <code>string</code>
+
+<a name="helpers.toUpperCase"></a>
+
+### helpers.toUpperCase(value) ⇒ <code>string</code>
+Converts a string to uppercase
+
+**Kind**: static method of [<code>helpers</code>](#helpers)  
 **Returns**: <code>string</code> - the uppercase string  
-**Api**: public  
+**Access**: public  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | value | <code>string</code> | the input string |
 
-<a name="eachSorted"></a>
+<a name="helpers.eachSorted"></a>
 
-## eachSorted ⇒ <code>string</code>
+### helpers.eachSorted() ⇒ <code>string</code>
 This block-helper can be used to iterate objects sorted by key. It behaves like the built-in
 `{{#each ...}}`-helper except that it can only be used for objects and the output is in a
 deterministic order (i.e. sorted).
@@ -313,8 +306,99 @@ With the data `{ b: 'another one', a: 'first' }`, ignoring newlines and indents,
 The helper will set the following @-values according to the Handlebars documentation:
 `@first`, `@index`, `@key`, `@last`, `@length`
 
-**Kind**: global variable  
-**Api**: public  
+**Kind**: static method of [<code>helpers</code>](#helpers)  
+**Access**: public  
+<a name="helpers.equal"></a>
+
+### helpers.equal(value1, value2) ⇒ <code>boolean</code>
+Checks whether two values a equal as in `value1 == value2` (not `===`)
+
+**Kind**: static method of [<code>helpers</code>](#helpers)  
+**Access**: public  
+
+| Param |
+| --- |
+| value1 | 
+| value2 | 
+
+<a name="helpers.md"></a>
+
+### helpers.md(&#x60;value&#x60;) ⇒ <code>Handlebars.SafeString</code>
+Render a markdown-formatted text as HTML.
+
+**Kind**: static method of [<code>helpers</code>](#helpers)  
+**Returns**: <code>Handlebars.SafeString</code> - a Handlebars-SafeString containing the provieded
+     markdown, rendered as HTML.  
+**Access**: public  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| `value` | <code>string</code> | the markdown-formatted text |
+| `options.hash.stripParagraph` | <code>boolean</code> | the marked-md-renderer wraps generated HTML in a &lt;p>-tag by default.      If this options is set to true, the &lt;p>-tag is stripped. |
+
+<a name="helpers.ifeq"></a>
+
+### helpers.ifeq(&#x60;v1&#x60;, &#x60;v2&#x60;)
+Block helper that compares to values. The body is executed if both value equal.
+Example:
+
+```hbs
+{{#ifeq value 10}}
+   Value is 10
+{{else}}
+   Value is not 10
+{{/ifeq}}
+```
+
+**Kind**: static method of [<code>helpers</code>](#helpers)  
+**Access**: public  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| `v1` | <code>object</code> | the first value |
+| `v2` | <code>object</code> | the second value |
+
+<a name="helpers.json"></a>
+
+### helpers.json(value) ⇒ <code>string</code>
+Converts a javascript-object into a stringified highlighted JSON-object
+
+**Kind**: static method of [<code>helpers</code>](#helpers)  
+**Access**: public  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>object</code> | the javascript object |
+
+<a name="helpers.ifcontains"></a>
+
+### helpers.ifcontains(array, object, options) ⇒ <code>string</code>
+Executes the block, if an object is part of an array
+
+**Kind**: static method of [<code>helpers</code>](#helpers)  
+**Access**: public  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| array | <code>Array.&lt;object&gt;</code> | the array |
+| object | <code>object</code> | the javascript object |
+| options | <code>object</code> | the Handlebars options |
+
+<a name="helpers.htmlId"></a>
+
+### helpers.htmlId(value) ⇒ <code>string</code>
+Replace all characters that may not be used in HTML id-attributes by '-'.
+There is still the restriction that IDs may only start with letters, which
+is not addressed by this helper.
+
+**Kind**: static method of [<code>helpers</code>](#helpers)  
+**Returns**: <code>string</code> - the value after replacement and escaping  
+**Access**: public  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>string</code> | the input value |
+
 
 
 
