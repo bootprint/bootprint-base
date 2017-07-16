@@ -181,18 +181,25 @@ function ifeq (v1, v2, options) {
 /**
  * Converts a javascript-object into a stringified highlighted JSON-object
  * @param {object} value the javascript object
+ * @param {object=} options Handlebars options
+ * @param {object=} options.hash parameters passed via `{{json abc=x}}`
+ * @param {number=} options.hash.space Amount of indent to use when formatting JSON (default: 4)
+ *   Set to "0" for a one-line JSON
+ *
  * @returns {string}
  * @access public
  * @memberOf helpers
  */
-function json (value) {
+function json (value, options) {
   if (!value) {
     return ''
   }
-  var schemaString = require('json-stable-stringify')(value, {space: 4})
-  return new Handlebars.SafeString(marked('```json\r\n' + schemaString + '\n```'))
-}
+  var space = (options && options.hash && options.hash.space != null) ? options.hash.space : 4
 
+  var schemaString = require('json-stable-stringify')(value, {space})
+  var highlightedString = highlight.highlight('json', schemaString).value
+  return new Handlebars.SafeString(highlightedString)
+}
 /**
  * Executes the block, if an object is part of an array
  * @param {object[]} array the array
