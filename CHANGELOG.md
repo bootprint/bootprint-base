@@ -1,6 +1,10 @@
 # Release notes
 
 <a name="current-release"></a>
+# Version 2.0.0-rc3 (Sat, 26 Aug 2017 20:20:07 GMT)
+
+* [706e787](https://github.com/bootprint/bootprint-base/commit/706e787) Add options "space" to "json" helper - Nils Knappmeier
+
 # Version 2.0.0-rc.2 (Sun, 25 Jun 2017 21:53:51 GMT)
 
 * [5d51c70](https://github.com/bootprint/bootprint-base/commit/5d51c70) Chore/Docs: Restructure helpers and add api-docs - Nils Knappmeier
