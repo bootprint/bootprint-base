@@ -21,7 +21,7 @@ npm -g install bootprint-base
 After installing the package globally, you can run bootprint with the command
 
 ```bash
-bootprint base https://raw.githubusercontent.com/bootprint/bootprint-base/v2.0.0-rc4/examples/example.json target
+bootprint base https://raw.githubusercontent.com/bootprint/bootprint-base/v2.0.0-rc.4/examples/example.json target
 ```
 
 `example.json` can be found in [examples/example.json](examples/example.json) in this project.

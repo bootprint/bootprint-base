@@ -1,6 +1,10 @@
 # Release notes
 
 <a name="current-release"></a>
+# Version 2.0.0-rc.4 (Sat, 26 Aug 2017 22:03:06 GMT)
+
+Fix version number
+
 # Version 2.0.0-rc4 (Sat, 26 Aug 2017 22:00:27 GMT)
 
 * [73e6e5f](https://github.com/bootprint/bootprint-base/commit/73e6e5f) Call "fixMarkup" in "json"-helper to produces output for <pre>-tags - Nils Knappmeier
