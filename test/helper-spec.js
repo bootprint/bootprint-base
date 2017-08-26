@@ -151,6 +151,7 @@ describe('The Handlebars-helpers:', function () {
     it('should highlight stringified json', function () {
       let actual = template({a: 'b'})
       expect(actual.trim(), 'Checking for hljs-classes').to.match(/class="hljs.*/)
+      expect(actual, 'Should not contain newlines (only <br>)').not.to.match(/\n/)
       expect(JSON.parse($(actual).text()), 'Checking text contents').to.deep.equal({a: 'b'})
     })
 

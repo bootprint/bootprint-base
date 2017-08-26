@@ -198,6 +198,7 @@ function json (value, options) {
 
   var schemaString = require('json-stable-stringify')(value, {space})
   var highlightedString = highlight.highlight('json', schemaString).value
+  highlightedString = highlight.fixMarkup(highlightedString)
   return new Handlebars.SafeString(highlightedString)
 }
 /**
