@@ -3,7 +3,7 @@
     "tag": "next"
   },
   "name": "bootprint-base",
-  "version": "2.0.0-rc3",
+  "version": "2.0.0-rc4",
   "description": "The base configuration used by other Bootprint modules",
   "main": "index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 # bootprint-base 
 
-[![NPM version](https://badge.fury.io/js/bootprint-base.svg)](http://badge.fury.io/js/bootprint-base)
+[![NPM version](https://img.shields.io/npm/v/bootprint-base.svg)](https://npmjs.com/package/bootprint-base)
 [![Travis Build Status](https://travis-ci.org/bootprint/bootprint-base.svg?branch=master)](https://travis-ci.org/bootprint/bootprint-base)
 [![Coverage Status](https://img.shields.io/codecov/bootprint/bootprint-base.svg)](https://codecov.io/github/bootprint/bootprint-base)
 
@@ -21,7 +21,7 @@ npm -g install bootprint-base
 After installing the package globally, you can run bootprint with the command
 
 ```bash
-bootprint bootprint-base https://raw.githubusercontent.com/bootprint/bootprint-base/v2.0.0-rc3/examples/example.json target
+bootprint base https://raw.githubusercontent.com/bootprint/bootprint-base/v2.0.0-rc4/examples/example.json target
 ```
 
 `example.json` can be found in [examples/example.json](examples/example.json) in this project.

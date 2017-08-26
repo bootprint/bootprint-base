@@ -1,6 +1,10 @@
 # Release notes
 
 <a name="current-release"></a>
+# Version 2.0.0-rc4 (Sat, 26 Aug 2017 22:00:27 GMT)
+
+* [73e6e5f](https://github.com/bootprint/bootprint-base/commit/73e6e5f) Call "fixMarkup" in "json"-helper to produces output for <pre>-tags - Nils Knappmeier
+
 # Version 2.0.0-rc3 (Sat, 26 Aug 2017 20:20:07 GMT)
 
 * [706e787](https://github.com/bootprint/bootprint-base/commit/706e787) Add options "space" to "json" helper - Nils Knappmeier
