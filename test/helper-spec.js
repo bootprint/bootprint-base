@@ -150,7 +150,6 @@ describe('The Handlebars-helpers:', function () {
 
     it('should highlight stringified json', function () {
       let actual = template({a: 'b'})
-      expect(actual.trim(), 'Checking for lang-class').to.match(/class="lang-json"/)
       expect(actual.trim(), 'Checking for hljs-classes').to.match(/class="hljs.*/)
       expect(JSON.parse($(actual).text()), 'Checking text contents').to.deep.equal({a: 'b'})
     })
