@@ -168,7 +168,7 @@ module.exports = {
       $(item).html('<a href=' + ref.replace(/&quot;/g, '') + '>' + ref + '</a>')
     })
 
-    return new Handlebars.SafeString($.html())
+    return new Handlebars.SafeString($.html().replace(/\n/g, ''))
   },
   'ifcontains': function (array, object, options) {
     if (array && array.indexOf(object) >= 0) {
